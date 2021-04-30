@@ -22,7 +22,7 @@ for j  in range (0,word_len):
 
 while win_var:  # games loop starts here
     if lives!=0:
-        guess=input("Guess a letter:\n")
+        guess=input("Guess a letter:\n").lower()
         for i in range (word_len):
             if guess==rand_word[i]:
                 dis[i]=rand_word[i]
